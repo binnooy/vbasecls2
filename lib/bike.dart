@@ -1,20 +1,20 @@
 import 'mother_vehicle.dart';
 
 class Bike extends Vehicle {
-  bool isElectric;
+  bool _caferacer;
 
-  Bike(String brand, int year, double fuelLevel, this.isElectric)
+  Bike(String brand, int year, double fuelLevel, this._caferacer)
       : super(brand, year, fuelLevel);
 
   void ringBell() {
-    print('Bike bell rings: Ding ding!');
+    print('Bike goes to vroommmmvrommmmmm!');
   }
 
   @override
   void drive(double distance) {
-    print(isElectric
-        ? 'Electric bike is cruising...'
-        : 'Pedal-powered bike is moving...');
+    print(_caferacer
+        ? 'bike is cruising...'
+        : 'bike is moving...'); 
     super.drive(distance);
   }
 }

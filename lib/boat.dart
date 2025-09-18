@@ -1,9 +1,9 @@
 import 'mother_vehicle.dart';
 
 class Boat extends Vehicle {
-  bool hasSails;
+  bool _hasSails;
 
-  Boat(String brand, int year, double fuelLevel, this.hasSails)
+  Boat(String brand, int year, double fuelLevel, this._hasSails)
       : super(brand, year, fuelLevel);
 
   void anchor() {
